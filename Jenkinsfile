@@ -7,19 +7,21 @@ pipeline{
             }
         }
         stage('clean et installer les dependance'){
-             withMaven {
+            
             steps{
+                 withMaven {
                 sh 'mvn clean install'
             }
             }
         }
         stage('execution des tests'){
-             withMaven {
+             
             steps{
+                withMaven {
                 sh 'mvn test'
             }
              }
-             
+
         }
     }
     post{
