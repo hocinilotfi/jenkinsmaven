@@ -13,8 +13,19 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void test_add_to_chart()
     {
         assertTrue( true );
     }
+    @Test
+    public void test_login_feature()
+    {
+        assertTrue( false );
+    }
+    @Test
+    public void test_sign_feature()
+    {
+        assertTrue( true );
+    }
+
 }

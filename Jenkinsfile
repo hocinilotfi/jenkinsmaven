@@ -10,8 +10,8 @@ pipeline{
             
             steps{
                  withMaven {
-                sh 'mvn clean install'
-            }
+                    sh 'mvn clean install'
+                }
             }
         }
         stage('execution des tests'){
